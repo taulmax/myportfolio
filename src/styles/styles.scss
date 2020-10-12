@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a:active, a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 110px;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  .menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .menu {
+      color: rgb(194, 194, 194);
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 25px;
+      margin: 0 2vw;
+      cursor: pointer;
+    }
+    .menu:hover {
+      color: gray;
+    }
+  }
+  .burgerMenu {
+    display: none;
+  }
+}
+
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .homeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    span {
+      padding: 20px 0px;
+    }
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding: 150px 280px;
+  .infoContainer-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.about {
+  background-color: white;
+  .about-description {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+}
+
+.skills {
+  background-color: #f5f5f5;
+  .skill-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      margin: 0px 13px;
+      .skill-img {
+        width: 128px;
+        height: 128px;
+      }
+      .skill-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Noto Sans KR", sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.projects {
+  background-color: #ffffff;
+  .projectBox {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+    -moz-box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+    box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+    .projectImg {
+      width: 500px;
+      height: 400px;
+    }
+    .projectInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 50px;
+      font-family: 'Do Hyeon', sans-serif;
+      .projectTitle {
+        font-size: 40px;
+        margin-bottom: 80px;
+      }
+      .projectPeriod {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      .projectDescription {
+        font-size: 30px;
+        margin-bottom: 80px;
+      }
+      .projectSkills {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .projectPeople {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: #f5f5f5;
+  .contactBox {
+    display: flex;
+    .emailBox, .githubBox {
+      font-family: 'Do Hyeon', sans-serif;
+      width: 300px;
+      height: 300px;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+      -moz-box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+      box-shadow: 9px 9px 21px 0px rgba(145,145,145,1);
+      i {
+        font-size: 80px;
+        margin-bottom: 20px;
+      }
+      .emailBoxTitle {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      .emailBoxContents {
+        font-size: 25px;
+      }
+    }
+    .emailBox {
+      margin-right: 70px;
+    }
+    .githubBox {
+      margin-left: 70px;
+      a:active, a:link {
+        color: black;
+      }
+    }
+  }
+}
+
+footer {
+  height: 50px;
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.mainBGI {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 0 5%;
+    .menuContainer {
+      display: none;
+    }
+    .burgerMenu {
+      display: flex;
+      font-size: 35px;
+    }
+  }
+
+  .home {
+    .homeText {
+      font-size: 15px;
+      span {
+        padding: 5px 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    .homeText {
+      font-size: 30px;
+      span {
+        padding: 10px 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .home {
+    .homeText {
+      font-size: 45px;
+      span {
+        padding: 15px 0px;
+      }
+    }
+  }
+}
