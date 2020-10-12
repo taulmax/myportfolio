@@ -3,7 +3,7 @@ import React from "react";
 const SkillCard = ({ skill }) => {
   return (
     <div className="skill-card">
-      <img className="skill-img" src={`/images/${skill}.png`} alt={skill} />
+      <img className="skill-img" src={`${process.env.PUBLIC_URL}/images/${skill}.png`} alt={skill} />
       <span className="skill-name">{skill}</span>
     </div>
   );

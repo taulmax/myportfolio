@@ -19,7 +19,7 @@ const App = () => {
       <Projects />
       <Contact />
       <Footer />
-      <img className="mainBGI" src="/images/mainBGI.jpg" alt="mainBGI" />
+      <img className="mainBGI" src={process.env.PUBLIC_URL + "/images/mainBGI.jpg"} alt="mainBGI" />
     </>
   );
 };
