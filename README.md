@@ -3,7 +3,7 @@
 
 ## Used Skills
 * React.js
-* SASS
+* SCSS
 
 ## Period
 2020.10.3 ~ 2020.10.13
